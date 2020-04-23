@@ -42,6 +42,7 @@
 
 ## groups_usersテーブル
 |Column|Type|Options|
+|------|----|-------|
 |user_id|string|null: false, foreign-key: true|
 |group_id|string|null: false, foreign-key: true|
 
