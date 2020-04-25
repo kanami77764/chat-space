@@ -1,0 +1,52 @@
+@include box-sizing;
+
+.chat {
+  background-color:#fff;
+  height: 100%;
+  width: calc(100vw - 300px);
+
+
+  .header {
+    height: 100px;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+
+    &__left-box {
+      width: 170px;
+      height: 82px;
+
+      &__group-name {
+        height: 20px;
+        font-size: 20px;
+        color: #333333;
+        margin: 0 40px 40px;
+        width: 170px;
+        padding-top: 35px;
+      }
+
+      &__member {
+        width: 170px;
+        font-size: 12px;
+        height: 12px;
+        color: #999999;
+        margin-left: 40px;
+        padding-top: 5px;
+      }
+    }
+
+    &__right-box {
+      margin: 28px 40px 14px 0;
+
+      &__btn {
+        height: 40px;
+        font-size: 16px;
+        color: #389ef0;
+        width: 72px;
+        text-align: center;
+        line-height: 40px;
+        border: #389ef0 1px solid;
+      }
+    }
+  }
+}

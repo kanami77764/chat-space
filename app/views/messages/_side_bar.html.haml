@@ -1,0 +1,21 @@
+.side-bar
+  .header
+    .header__items
+      .header__items__user
+        tarou
+      .header__items__icons
+        =link_to "#", class: "header__items__icons1" do
+          = icon('far', 'edit', class: 'icons1')
+        =link_to "#", class: "header__items__icons2" do
+          = icon('fas', 'cog', class: 'icons2')
+  
+  
+  
+  .group-list
+    =link_to "#" do
+      .group-list__contents
+        %p.group-list__contents__group-name
+          BBB
+        %p.group-list__contents__text
+          まだメッセージはありません
+          
