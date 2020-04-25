@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+@include box-sizing;
 
 .side-bar {
   background-color: #253141;

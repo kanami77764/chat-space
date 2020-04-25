@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+@include box-sizing;
 
 .wrapper {
   height: 100vh;
