@@ -1,0 +1,30 @@
+.chat
+  .chat__header
+    .chat__header__left-box
+      %p.chat__header__left-box__group-name
+        BBB
+      %p.chat__header__left-box__member
+        member
+    .chat__header__right-box
+      =link_to "#" do
+        .chat__header__right-box__btn
+          Edit    
+    
+
+  .chat__message-list
+    .chat__message-list__id
+      .chat__message-list__id__info
+        %p.chat__message-list__id__info__name tarou
+        %p.chat__message-list__id__info__date 2020/04/25(Sat) 11:18:06
+      .chat__message-list__contents aaaa
+
+
+
+  .chat__form
+    .chat__form__message
+      .chat__form__message__box
+        %input{type:"text", class:"chat__form__message__box__text", placeholder:"type a message"}
+        %label{class:"chat__form__message__box__image"}
+          = icon('far', 'image')
+          %input{type:"file", class:"chat__form__message__box__image__file"}
+      %input{type:"submit", value:"Send", class:"chat__form__message__btn"}
