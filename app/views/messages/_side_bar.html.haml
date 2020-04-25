@@ -1,18 +1,21 @@
 .side-bar
-  .side-bar__header
-    .side-bar__header__items
-      .side-bar__header__items__user
+  .header
+    .header__items
+      .header__items__user
         tarou
-      .side-bar__header__items__icons
-        =link_to "#", class: "side-bar__header__items__icons1" do
+      .header__items__icons
+        =link_to "#", class: "header__items__icons1" do
           = icon('far', 'edit', class: 'icons1')
-        =link_to "#", class: "side-bar__header__items__icons2" do
+        =link_to "#", class: "header__items__icons2" do
           = icon('fas', 'cog', class: 'icons2')
-  .side-bar__group-list
+  
+  
+  
+  .group-list
     =link_to "#" do
-      .side-bar__group-list__contents
-        %p.side-bar__group-list__contents__group-name
+      .group-list__contents
+        %p.group-list__contents__group-name
           BBB
-        %p.side-bar__group-list__contents__text
+        %p.group-list__contents__text
           まだメッセージはありません
           

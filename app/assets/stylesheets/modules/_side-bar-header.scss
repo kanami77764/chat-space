@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.side-bar {
+  background-color: #253141;
+  height: 100%;
+  width: 300px;
+
+  .header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+
+    &__items {
+      height: 20px;
+      width: 100%;
+      margin: 0 20px 0;
+      display: flex;
+      justify-content: space-between;
+      line-height: 20px;
+
+
+      &__user {
+        font-weight: bold;
+        line-height: 20px;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      a {
+        height: 20px;
+        width: 60px;
+        text-decoration: none;
+        color: #fff;
+        margin: 0 auto;
+        line-height: 20px;
+      }
+    }
+  } 
+}
