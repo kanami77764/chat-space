@@ -4,18 +4,18 @@
       .header__items__user
         = current_user.name
       .header__items__icons
-        =link_to "#", class: "header__items__icons1" do
+        = link_to new_group_path, class: "header__items__icons1" do
           = icon('far', 'edit', class: 'icons1')
-        =link_to edit_user_path(current_user), class: "header__items__icons2" do
+        = link_to edit_user_path(current_user), class: "header__items__icons2" do
           = icon('fas', 'cog', class: 'icons2')
   
   
-  
   .group-list
-    =link_to "#" do
+    - current_user.groups.each do |group|
       .group-list__contents
-        %p.group-list__contents__group-name
-          BBB
+        = link_to "#" do
+          .group-list__contents__group-name
+          = group.name
         %p.group-list__contents__text
           まだメッセージはありません
           
