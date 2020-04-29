@@ -5,41 +5,43 @@
 
 
   &__message {
-    display: flex;
-
-    &__box {
-      width: 100%;
+    .new_message {
       display: flex;
-      position: relative;
-
-      &__text {
-        height: 50px;
-        padding: 0 40px 0 10px;
+    }
+      &__box {
         width: 100%;
-        border-style: none;
-      }
+        display: flex;
+        position: relative;
+
+        &__text {
+          height: 50px;
+          padding: 0 40px 0 10px;
+          width: 100%;
+          border-style: none;
+        }
       
-      &__image {
-        cursor: pointer;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 1.3rem;
-        
-        &__file {
-          display: none;
+        &__image {
+          cursor: pointer;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 1.3rem;
+          
+          &__file {
+            display: none;
+          }
         }
       }
-    }
 
 
-    &__btn {
-      height: 50px;
-      width: 100px;
-      margin-left: 15px;
-      background-color: #389ef0;
-      color: #fff;
-      border: #389ef0;
-    }
+      &__btn {
+        height: 50px;
+        width: 100px;
+        margin-left: 15px;
+        background-color: #389ef0;
+        color: #fff;
+        border: #389ef0;
+      }
+    
   }
 }
