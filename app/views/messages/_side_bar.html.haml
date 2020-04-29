@@ -13,9 +13,8 @@
   .group-list
     - current_user.groups.each do |group|
       .group-list__contents
-        = link_to "#" do
+        = link_to group_messages_path(group) do
           .group-list__contents__group-name
-          = group.name
-        %p.group-list__contents__text
-          まだメッセージはありません
-          
+            = group.name
+          .group-list__contents__text
+            =group.show_last_message
