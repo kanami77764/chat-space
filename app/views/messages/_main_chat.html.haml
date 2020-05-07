@@ -4,6 +4,7 @@
       .header__left-box__group-name
         = @group.name
       .header__left-box__member
+        Member:
         - @group.users.each do |user|
           = user.name
 
